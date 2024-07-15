@@ -21,7 +21,7 @@ export const NavItem: React.FC<NavItemProps> = ({
   return (
     <Link
       href={url}
-      className={`group flex md:flex-col gap-2 md:gap-0 items-center font-bold rounded-full ${
+      className={`group flex md:flex-col gap-2 md:gap-0 items-center rounded-full ${
         width < 768
           ? 'w-[75%] justify-center py-1 duration-300 transition-all ease-in-out'
           : ''
@@ -37,7 +37,7 @@ export const NavItem: React.FC<NavItemProps> = ({
       <span
         className={`${
           url === currentLoc
-            ? 'bg-gradient-to-r from-[#7209B7] to-white bg-clip-text text-transparent'
+            ? 'bg-gradient-to-r from-[#7209B7] to-white bg-clip-text text-transparent font-bold'
             : 'text-white'
         }`}
       >

@@ -25,7 +25,7 @@ export const Navbar: React.FC = () => {
   return (
     <nav
       id="navbar"
-      className="sticky inset-0 z-50 w-full flex flex-col md:items-center justify-center shadow-lg bg-black"
+      className="sticky inset-0 z-50 w-full flex flex-col md:items-center font-bold justify-center shadow-lg bg-black"
     >
       <div className="flex items-center py-6 px-8 md:px-14 lg:px-16 xl:px-28 justify-between w-full">
         <Link href={'/'} className="relative aspect-square w-12">
@@ -67,7 +67,7 @@ export const Navbar: React.FC = () => {
             initial={{ x: '100%' }}
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.4 }}
             className="fixed inset-y-0 w-full bg-[#100E0E] z-50 p-5 flex flex-col gap-6"
           >
             <div className="flex justify-end">
