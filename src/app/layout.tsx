@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { Navbar } from '@/components'
+import { Navbar, PageLayout } from '@/components'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,23 +19,13 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-        <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
           rel="stylesheet"
         ></link>
       </head>
       <body className={inter.className}>
         <Navbar />
-        <div className="max-w-[1440px] w-full mx-auto flex flex-col gap-16 md:gap-20 lg:gap-24 px-8 md:px-14 lg:px-16 xl:px-28 py-12 md:py-16">
-          {children}
-        </div>
+        <PageLayout children={children} />
       </body>
     </html>
   )
