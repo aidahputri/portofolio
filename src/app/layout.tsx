@@ -33,7 +33,9 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <Navbar />
-        {children}
+        <div className="max-w-[1440px] w-full mx-auto flex flex-col gap-16 md:gap-20 lg:gap-24 px-8 md:px-14 lg:px-16 xl:px-28 py-12 md:py-16">
+          {children}
+        </div>
       </body>
     </html>
   )
