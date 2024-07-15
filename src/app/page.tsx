@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="absolute top-0 left-0 flex items-center justify-center w-screen h-screen text-8xl text-white opacity-80 select-none text-shadow z-[100]">
+      {/* <div className="absolute top-0 left-0 flex items-center justify-center w-screen h-screen text-8xl text-white opacity-80 select-none text-shadow z-[100]">
         Bubbles
       </div>
       <div className="relative w-screen h-screen overflow-hidden bg-gradient-to-tr from-bg1 to-bg2">
@@ -36,7 +36,7 @@ export default function Home() {
           <div className="absolute top-[calc(50%-80%)] left-[calc(50%-80%)] w-[160%] h-[160%] bg-color5 rounded-full mix-blend-hard-light animate-[moveInCircle_20s_ease_infinite]"></div>
           <div className="absolute top-[-50%] left-[-50%] w-full h-full bg-color-interactive rounded-full mix-blend-hard-light opacity-70"></div>
         </div>
-      </div>
+      </div> */}
     </main>
   )
 }
