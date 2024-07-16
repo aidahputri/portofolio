@@ -1,7 +1,7 @@
-import * as Code from '../../../../../public/Code.svg'
-import * as Figma from '../../../../../public/Figma.svg'
-import * as Layers from '../../../../../public/Layers.svg'
-import * as Activity from '../../../../../public/Activity.svg'
+import Code from '../../../../../public/Code.svg'
+import Figma from '../../../../../public/Figma.svg'
+import Layers from '../../../../../public/Layers.svg'
+import Activity from '../../../../../public/Activity.svg'
 import Image from 'next/image'
 
 export const HIGHLIGHT_ITEMS = [
