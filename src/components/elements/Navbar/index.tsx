@@ -1,31 +1,45 @@
-'use client'
+'use client';
 
-import Link from 'next/link'
-import Image from 'next/image'
-import * as Logo from '../../../../public/logo-aidah.svg'
-import { usePathname } from 'next/navigation'
-import { useEffect, useState } from 'react'
-import { useWindowSize } from 'usehooks-ts'
-import { AnimatePresence, motion } from 'framer-motion'
-import { NAV_ITEMS } from './constant'
-import { NavItem } from './NavItem'
-import { HiOutlineBars3BottomRight } from 'react-icons/hi2'
-import { IoClose } from 'react-icons/io5'
+import Link from 'next/link';
+import Image from 'next/image';
+import * as Logo from '../../../../public/logo-aidah.svg';
+import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import { useWindowSize } from 'usehooks-ts';
+import { AnimatePresence, motion } from 'framer-motion';
+import { NAV_ITEMS } from './constant';
+import { NavItem } from './NavItem';
+import { HiOutlineBars3BottomRight } from 'react-icons/hi2';
+import { IoClose } from 'react-icons/io5';
 
 export const Navbar: React.FC = () => {
-  const pathname = usePathname()
-  const [isNavbarOpen, setIsNavbarOpen] = useState(false)
-  const [isClient, setIsClient] = useState(false)
-  const { width } = useWindowSize()
+  const pathname = usePathname();
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+  const { width } = useWindowSize();
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    setIsClient(true)
-  }, [])
+    setIsClient(true);
+
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <nav
       id="navbar"
-      className="sticky inset-0 z-50 w-full flex flex-col md:items-center font-bold justify-center bg-transparent"
+      className={`sticky inset-0 z-50 w-full flex flex-col md:items-center font-bold justify-center transition-colors duration-300 ${isScrolled ? 'bg-black' : 'bg-transparent'}`}
     >
       <div className="flex items-center py-6 px-8 md:px-14 lg:px-16 xl:px-28 justify-between w-full">
         <Link href={'/'} className="relative aspect-square w-12">
@@ -90,5 +104,5 @@ export const Navbar: React.FC = () => {
         )}
       </AnimatePresence>
     </nav>
-  )
-}
+  );
+};
