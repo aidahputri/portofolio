@@ -25,7 +25,7 @@ export const Navbar: React.FC = () => {
   return (
     <nav
       id="navbar"
-      className="sticky inset-0 z-50 w-full flex flex-col md:items-center font-bold justify-center shadow-lg bg-black"
+      className="sticky inset-0 z-50 w-full flex flex-col md:items-center font-bold justify-center bg-transparent"
     >
       <div className="flex items-center py-6 px-8 md:px-14 lg:px-16 xl:px-28 justify-between w-full">
         <Link href={'/'} className="relative aspect-square w-12">
