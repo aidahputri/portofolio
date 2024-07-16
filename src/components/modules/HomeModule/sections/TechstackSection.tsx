@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { FRAMEWORKS, LANGUAGES } from '../constants'
+import { FRAMEWORKS, LANGUAGES, TOOLS } from '../constants'
 import { InfiniteLogos } from '../module-elements'
 import { FaArrowRightLong } from 'react-icons/fa6'
 
@@ -46,7 +46,7 @@ export const TechStackSection: React.FC = () => {
           <span className="font-bold text-center text-md md:text-lg xl:text-xl 2xl:text-2xl">
             Tools
           </span>
-          <InfiniteLogos arr={LANGUAGES} />
+          <InfiniteLogos arr={TOOLS} />
         </div>
       </div>
     </section>
