@@ -51,14 +51,15 @@ export const HeroSection: React.FC = () => {
 
         <Link
           href={''}
-          className="flex items-center px-6 py-3 md:px-8 md:py-3 mt-10 bg-[#3A0CA3] hover:bg-[#3A0CA3]/70 rounded-lg w-fit gap-4 transition-transform duration-300 transform hover:scale-95"
+          className="flex items-center px-6 py-3 md:px-8 md:py-3 mt-10 bg-[#3A0CA3] hover:bg-[#3A0CA3]/70 rounded-lg w-full md:w-fit 
+          gap-4 transition-transform duration-300 transform hover:scale-95"
         >
-          <span className="font-bold text-sm md:text-lg">Go to Projects</span>
+          <span className="font-bold text-sm md:text-md">Go to Projects</span>
           <FiMousePointer size={20} />
         </Link>
       </div>
 
-      <div className="relative w-full z-50">
+      <div className="relative w-full z-20">
         <motion.div
           animate={{ y: [0, -10, 0] }}
           transition={{ duration: 1.5, repeat: Infinity }}
