@@ -13,7 +13,7 @@ interface AnimatedBlobProps {
 
 const AnimatedBlob: React.FC<AnimatedBlobProps> = ({ className }) => (
   <motion.div
-    className={`absolute top-0 left-0 w-80 h-80 bg-gradient-to-r from-purple-500 to-pink-500 opacity-30 blur-2xl rounded-full ${className}`}
+    className={`-z-10 hidden md:block absolute top-0 left-0 w-80 h-80 bg-gradient-to-r from-purple-500 to-pink-500 opacity-30 blur-2xl rounded-full ${className}`}
     animate={{ x: [0, 100, -100, 0], y: [0, -50, 50, 0] }}
     transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
   />
@@ -22,7 +22,7 @@ const AnimatedBlob: React.FC<AnimatedBlobProps> = ({ className }) => (
 export const HeroSection: React.FC = () => {
   return (
     <section className="w-full flex flex-col md:flex-row items-center gap-8 md:gap-16 xl:gap-20 overflow-hidden">
-      <div className="flex flex-col gap-4 w-full xl:w-[90%] text-center md:text-left">
+      <div className="flex flex-col gap-4 w-full xl:w-[90%] text-center md:text-left justify-center md:justify-normal">
         <span className="text-xs md:text-sm font-medium">
           H E L L O&nbsp;&nbsp;&nbsp;E V E R Y O N E!
         </span>
@@ -49,15 +49,13 @@ export const HeroSection: React.FC = () => {
           tackle diverse tasks and situations.
         </p>
 
-        <div className="pt-10">
-          <Link
-            href={''}
-            className="flex items-center px-8 py-3 bg-[#3A0CA3] rounded-lg w-fit gap-4"
-          >
-            <span className="font-bold">Go to Projects</span>
-            <FiMousePointer size={20} />
-          </Link>
-        </div>
+        <Link
+          href={''}
+          className="flex items-center px-6 py-3 md:px-8 md:py-3 mt-10 bg-[#3A0CA3] hover:bg-[#3A0CA3]/70 rounded-lg w-fit gap-4 transition-transform duration-300 transform hover:scale-95"
+        >
+          <span className="font-bold text-sm md:text-lg">Go to Projects</span>
+          <FiMousePointer size={20} />
+        </Link>
       </div>
 
       <div className="relative w-full z-50">
