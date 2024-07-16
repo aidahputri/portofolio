@@ -39,12 +39,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(75, 85, 99, 0.5); 
-  border-radius: 8px; 
+  background-color: rgba(75, 85, 99, 0.5);
+  border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(75, 85, 99, 0.7); 
+  background-color: rgba(75, 85, 99, 0.7);
 }
 
 @layer utilities {
@@ -61,4 +61,21 @@ body {
   .select-none {
     user-select: none;
   }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-33.33%);
+  }
+}
+
+.marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-reverse {
+  animation-direction: reverse;
 }
