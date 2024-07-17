@@ -23,6 +23,7 @@ export const InfiniteLogos: React.FC<InfiniteLogosProps> = ({
             width={80}
             height={80}
             className="mx-5"
+            title="aidah kuci kuci"
           />
         ))}
       </div>
