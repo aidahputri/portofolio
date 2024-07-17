@@ -79,3 +79,19 @@ body {
 .marquee-reverse {
   animation-direction: reverse;
 }
+
+@keyframes gradient-border {
+  0% {
+    border-color: #4361EE;
+  }
+  50% {
+    border-color: #f72585;
+  }
+  100% {
+    border-color: #7209b7;
+  }
+}
+
+.animate-gradient-border {
+  animation: gradient-border 10s linear infinite;
+}
