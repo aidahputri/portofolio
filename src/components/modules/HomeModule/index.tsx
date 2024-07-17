@@ -6,8 +6,8 @@ export const HomeModule: React.FC = () => {
     <PageAnimation>
       <div className="w-full justify-center flex flex-col gap-16 2xl:gap-24">
         <HeroSection />
-        <HighlightSection/>
-        <TechStackSection/>
+        <HighlightSection />
+        <TechStackSection />
       </div>
     </PageAnimation>
   )

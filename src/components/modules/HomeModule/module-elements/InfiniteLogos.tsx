@@ -6,10 +6,15 @@ interface InfiniteLogosProps {
   reverse?: boolean
 }
 
-export const InfiniteLogos: React.FC<InfiniteLogosProps> = ({ arr, reverse=false }) => {
+export const InfiniteLogos: React.FC<InfiniteLogosProps> = ({
+  arr,
+  reverse = false,
+}) => {
   return (
     <div className="relative overflow-hidden py-5 max-w-[1024px]">
-      <div className={`marquee flex items-center whitespace-nowrap ${reverse? 'marquee-reverse': ''}`}>
+      <div
+        className={`marquee flex items-center whitespace-nowrap ${reverse ? 'marquee-reverse' : ''}`}
+      >
         {[...arr, ...arr, ...arr].map((logo, index) => (
           <Image
             key={index}

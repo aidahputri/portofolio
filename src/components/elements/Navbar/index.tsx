@@ -1,40 +1,40 @@
-'use client';
+'use client'
 
-import Link from 'next/link';
-import Image from 'next/image';
-import * as Logo from '../../../../public/logo-aidah.svg';
-import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
-import { useWindowSize } from 'usehooks-ts';
-import { AnimatePresence, motion } from 'framer-motion';
-import { NAV_ITEMS } from './constant';
-import { NavItem } from './NavItem';
-import { HiOutlineBars3BottomRight } from 'react-icons/hi2';
-import { IoClose } from 'react-icons/io5';
+import Link from 'next/link'
+import Image from 'next/image'
+import * as Logo from '../../../../public/logo-aidah.svg'
+import { usePathname } from 'next/navigation'
+import { useEffect, useState } from 'react'
+import { useWindowSize } from 'usehooks-ts'
+import { AnimatePresence, motion } from 'framer-motion'
+import { NAV_ITEMS } from './constant'
+import { NavItem } from './NavItem'
+import { HiOutlineBars3BottomRight } from 'react-icons/hi2'
+import { IoClose } from 'react-icons/io5'
 
 export const Navbar: React.FC = () => {
-  const pathname = usePathname();
-  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
-  const [isClient, setIsClient] = useState(false);
-  const { width } = useWindowSize();
-  const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname()
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false)
+  const [isClient, setIsClient] = useState(false)
+  const { width } = useWindowSize()
+  const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
-    setIsClient(true);
+    setIsClient(true)
 
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        setIsScrolled(true);
+        setIsScrolled(true)
       } else {
-        setIsScrolled(false);
+        setIsScrolled(false)
       }
-    };
+    }
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll)
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
     <nav
@@ -104,5 +104,5 @@ export const Navbar: React.FC = () => {
         )}
       </AnimatePresence>
     </nav>
-  );
-};
+  )
+}

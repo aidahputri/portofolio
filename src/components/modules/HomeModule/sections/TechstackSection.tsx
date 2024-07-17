@@ -11,10 +11,9 @@ export const TechStackSection: React.FC = () => {
           My Tech Stack
         </h2>
 
-        <span className="text-sm md:text-md xl:text-lg text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et
-          congue odio. Integer tincidunt risus a elit vestibulum, ac eleifend
-          enim bibendum.
+        <span className="text-md md:text-lg xl:text-xl text-center">
+          Below is a showcase of the technologies and tools I frequently use in
+          my development work.
         </span>
 
         <Link
