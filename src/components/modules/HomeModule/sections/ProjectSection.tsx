@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import { FaArrowRightLong } from 'react-icons/fa6'
+import { FILTERS } from '../constants'
+import { ChipButton } from '../module-elements'
 
 export const ProjectSection: React.FC = () => {
   return (
@@ -15,9 +17,21 @@ export const ProjectSection: React.FC = () => {
           enim bibendum.
         </span>
 
+        <div className="flex flex-wrap gap-2 place-self-center">
+          {FILTERS.map((filter, index) => {
+            return (
+              <ChipButton
+                key={index}
+                title={filter.title}
+                value={filter.value}
+              />
+            )
+          })}
+        </div>
+
         <Link
           href={''}
-          className="flex items-center place-self-end px-6 py-3 md:px-8 md:py-3 bg-[#B5179E] hover:bg-[#B5179E]/70 rounded-xl w-full md:w-fit 
+          className="flex items-center place-self-end px-6 py-3 md:px-8 md:py-3 bg-[#3A0CA3] hover:bg-[#3A0CA3]/70 rounded-xl w-full md:w-fit 
           gap-4 transition-transform duration-300 transform hover:scale-95"
         >
           <span className="font-bold text-md md:text-lg">See All</span>
