@@ -4,7 +4,7 @@ export const FILTERS = [
     value: 'ALL',
   },
   {
-    title: 'Webdev',
+    title: 'Web Development',
     value: 'WEBDEV',
   },
   {

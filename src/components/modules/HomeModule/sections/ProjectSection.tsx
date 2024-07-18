@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { FaArrowRightLong } from 'react-icons/fa6'
-import { FILTERS } from '../constants'
 import { ChipButton, ChipButtonGroup } from '../module-elements'
+import { PROJECTS } from '@/components/elements/ProjectCard/constant'
+import { ProjectCard } from '@/components/elements'
 
 export const ProjectSection: React.FC = () => {
   return (
@@ -17,16 +18,33 @@ export const ProjectSection: React.FC = () => {
           enim bibendum.
         </span>
 
-        <ChipButtonGroup/>
+        <ChipButtonGroup />
 
         <Link
           href={''}
-          className="flex items-center place-self-end px-6 py-3 md:px-8 md:py-3 bg-[#3A0CA3] hover:bg-[#3A0CA3]/70 rounded-xl w-full md:w-fit 
+          className="flex items-center place-self-end px-6 py-3 md:px-8 md:py-3 bg-[#F72585] hover:bg-[#F72585]/70 rounded-xl w-full md:w-fit 
           gap-4 transition-transform duration-300 transform hover:scale-95"
         >
           <span className="font-bold text-md md:text-lg">See All</span>
           <FaArrowRightLong size={20} color="#ffffff" />
         </Link>
+      </div>
+
+      <div className="grid grid-cols-2 gap-8">
+        {PROJECTS.map((item, index) => {
+          return (
+            <ProjectCard
+              key={index}
+              title={item.title}
+              imageUrl={item.imageUrl}
+              type={item.type}
+              paid={item.paid}
+              description={item.description}
+              techStacks={item.techStacks}
+              website={item.website}
+            />
+          )
+        })}
       </div>
     </section>
   )
