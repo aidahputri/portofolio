@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { Navbar, PageLayout } from '@/components'
+import { ChipButtonContextProvider } from '@/context'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,8 +25,10 @@ export default function RootLayout({
         ></link>
       </head>
       <body className={inter.className}>
-        <Navbar />
-        <PageLayout children={children} />
+        <ChipButtonContextProvider>
+          <Navbar />
+          <PageLayout children={children} />
+        </ChipButtonContextProvider>
       </body>
     </html>
   )

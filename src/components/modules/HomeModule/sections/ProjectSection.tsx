@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { FaArrowRightLong } from 'react-icons/fa6'
 import { FILTERS } from '../constants'
-import { ChipButton } from '../module-elements'
+import { ChipButton, ChipButtonGroup } from '../module-elements'
 
 export const ProjectSection: React.FC = () => {
   return (
@@ -17,17 +17,7 @@ export const ProjectSection: React.FC = () => {
           enim bibendum.
         </span>
 
-        <div className="flex flex-wrap gap-2 place-self-center">
-          {FILTERS.map((filter, index) => {
-            return (
-              <ChipButton
-                key={index}
-                title={filter.title}
-                value={filter.value}
-              />
-            )
-          })}
-        </div>
+        <ChipButtonGroup/>
 
         <Link
           href={''}
