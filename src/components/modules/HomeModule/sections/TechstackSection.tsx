@@ -1,11 +1,11 @@
 import Link from 'next/link'
 import { FRAMEWORKS, LANGUAGES, TOOLS } from '../constants'
-import { InfiniteLogos } from '../module-elements'
+import { AnimatedBlob, InfiniteLogos } from '../module-elements'
 import { FaArrowRightLong } from 'react-icons/fa6'
 
 export const TechStackSection: React.FC = () => {
   return (
-    <section className="w-full flex flex-col items-center justify-center gap-10 md:gap-12 xl:gap-16">
+    <section className="w-full flex flex-col items-center justify-center gap-10 md:gap-12 xl:gap-16 relative">
       <div className="flex flex-col gap-10">
         <h2 className="font-bold text-lg md:text-xl xl:text-3xl 2xl:text-4xl bg-gradient-to-r from-[#7209B7] to-[#F72585] bg-clip-text text-transparent text-center">
           My Tech Stack
@@ -48,6 +48,9 @@ export const TechStackSection: React.FC = () => {
           <InfiniteLogos arr={TOOLS} />
         </div>
       </div>
+
+      {/* <AnimatedBlob className="top-40 w-64 h-64 blur-3xl bg-gradient-to-r from-purple-500 to-pink-700" />
+      <AnimatedBlob className="top-96 left-auto -right-8 inset-0 bottom-0 w-96 h-96 blur-3xl bg-gradient-to-r from-purple-500 to-purple-800" /> */}
     </section>
   )
 }

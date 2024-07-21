@@ -1,6 +1,7 @@
 import { ProjectCardProps } from './interface'
 import ECI from '../../../../public/images/Eci.png'
 import TamanSchool from '../../../../public/images/taman-school.png'
+import Pegon from '../../../../public/images/pegon.png'
 
 export const PROJECTS: ProjectCardProps[] = [
   {
@@ -29,6 +30,24 @@ export const PROJECTS: ProjectCardProps[] = [
     techStacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
+    ],
+    website: 'https://www.tamanschool.com/',
+  },
+  {
+    title: 'Pegon',
+    imageUrl: Pegon,
+    type: 'WEBDEV',
+    paid: false,
+    description:
+      'Pegon is a solution dedicated to preserve manuscripts written in Pegon Language. By digitizing the manuscripts, Pegon is trying to preserve ancient manuscripts from the erosion of time.',
+    techStacks: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
     ],
     website: 'https://www.tamanschool.com/',
   },
