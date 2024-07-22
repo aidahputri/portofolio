@@ -13,11 +13,7 @@ export const useChipButtonContext = () => useContext(ChipButtonContext)
 export const ChipButtonContextProvider: React.FC<
   ChipButtonContextProviderProps
 > = ({ children }) => {
-  const [clickedButton, setClickedButton] = useState<string | null>(null)
-
-  // useEffect(() => {
-  //   console.log(clickedButton)
-  // }, [clickedButton])
+  const [clickedButton, setClickedButton] = useState<string | null>('ALL')
 
   const contextValue = {
     clickedButton,

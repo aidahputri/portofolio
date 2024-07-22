@@ -1,10 +1,22 @@
+'use client'
+
 import Link from 'next/link'
 import { FaArrowRightLong } from 'react-icons/fa6'
-import { ChipButton, ChipButtonGroup } from '../module-elements'
+import { ChipButtonGroup } from '../module-elements'
 import { PROJECTS } from '@/components/elements/ProjectCard/constant'
 import { ProjectCard } from '@/components/elements'
+import { useChipButtonContext } from '@/context'
 
 export const ProjectSection: React.FC = () => {
+  const { clickedButton } = useChipButtonContext()
+
+  const filteredProjects =
+    clickedButton === 'ALL'
+      ? PROJECTS
+      : PROJECTS.filter((project) => project.type === clickedButton)
+
+  const displayedProjects = filteredProjects.slice(0, 3)
+
   return (
     <section className="w-full flex flex-col items-center justify-center gap-10 md:gap-12 xl:gap-16">
       <div className="flex flex-col gap-10">
@@ -31,20 +43,18 @@ export const ProjectSection: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-        {PROJECTS.map((item, index) => {
-          return (
-            <ProjectCard
-              key={index}
-              title={item.title}
-              imageUrl={item.imageUrl}
-              type={item.type}
-              paid={item.paid}
-              description={item.description}
-              techStacks={item.techStacks}
-              website={item.website}
-            />
-          )
-        })}
+        {displayedProjects.map((item, index) => (
+          <ProjectCard
+            key={index}
+            title={item.title}
+            imageUrl={item.imageUrl}
+            type={item.type}
+            paid={item.paid}
+            description={item.description}
+            techStacks={item.techStacks}
+            website={item.website}
+          />
+        ))}
       </div>
     </section>
   )

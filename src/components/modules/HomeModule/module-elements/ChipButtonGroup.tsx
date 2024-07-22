@@ -7,8 +7,6 @@ import { useChipButtonContext } from '@/context'
 export const ChipButtonGroup: React.FC = () => {
   const { clickedButton, setClickedButton } = useChipButtonContext()
 
- 
-
   return (
     <div className="flex flex-wrap gap-2 place-self-center">
       {FILTERS.map((filter, index) => {
