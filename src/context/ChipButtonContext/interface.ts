@@ -1,6 +1,6 @@
 export interface ChipButtonContextProps {
-  clickedButton: string | null;
-  setClickedButton: (value: string) => void;
+  clickedButton: string | null
+  setClickedButton: (value: string) => void
 }
 
 export interface ChipButtonContextProviderProps {
