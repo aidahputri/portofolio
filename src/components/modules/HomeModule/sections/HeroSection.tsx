@@ -39,7 +39,7 @@ export const HeroSection: React.FC = () => {
         </p>
 
         <Link
-          href={''}
+          href={'/projects'}
           className="flex items-center px-6 py-3 md:px-8 md:py-3 mt-10 bg-[#3A0CA3] hover:bg-[#3A0CA3]/70 rounded-lg w-full md:w-fit 
           gap-4 transition-transform duration-300 transform hover:scale-95"
         >

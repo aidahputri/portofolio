@@ -16,7 +16,7 @@ export const ChipButton: React.FC<
     <button
       value={value}
       onClick={onClick}
-      className={`w-fit flex items-center justify-center px-4 py-2 rounded-full border border-[#B5179E] ${
+      className={`w-fit flex items-center text-xs justify-center px-4 py-2 rounded-full border border-[#B5179E] ${
         isClicked ? 'bg-[#B5179E] text-white' : 'bg-transparent'
       }`}
     >
