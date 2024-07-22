@@ -53,6 +53,7 @@ export const ProjectSection: React.FC = () => {
             description={item.description}
             techStacks={item.techStacks}
             website={item.website}
+            application={item.application}
           />
         ))}
       </div>

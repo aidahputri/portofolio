@@ -10,4 +10,5 @@ export interface ProjectCardProps {
   website?: string
   git?: string
   documentation?: string
+  application?: string
 }

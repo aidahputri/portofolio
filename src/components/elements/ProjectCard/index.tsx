@@ -16,6 +16,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   website,
   git,
   documentation,
+  application
 }) => {
   return (
     <motion.div
@@ -57,6 +58,15 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
               className="text-sm w-fit rounded-lg px-8 py-2 bg-[#B5179E] font-bold"
             >
               Website
+            </Link>
+          )}
+          {application && (
+            <Link
+              href={application}
+              target="_blank"
+              className="text-sm w-fit rounded-lg px-8 py-2 bg-[#B5179E] font-bold"
+            >
+              Application
             </Link>
           )}
           {git && (
