@@ -5,6 +5,7 @@ import { Footer, Navbar, PageLayout } from '@/components'
 import { ChipButtonContextProvider } from '@/context'
 import { Toaster } from 'react-hot-toast'
 import { LoadingContextProvider } from '@/context/LoadingContext'
+import AppLayout from '@/components/elements/AppLayout'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,9 +30,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <LoadingContextProvider>
           <ChipButtonContextProvider>
-            <Navbar />
-            <PageLayout children={children} />
-            <Footer />
+          <AppLayout>{children}</AppLayout>
           </ChipButtonContextProvider>
           <Toaster />
         </LoadingContextProvider>
