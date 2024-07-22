@@ -31,7 +31,7 @@ export const Loading: React.FC = () => {
           words={['Loading...']}
           loop={0}
           cursor
-          cursorStyle="_"
+          cursorStyle="***"
           typeSpeed={100}
           deleteSpeed={50}
           delaySpeed={1000}
