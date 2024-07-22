@@ -26,7 +26,7 @@ export const TechStackSection: React.FC = () => {
         </Link>
       </div>
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 overflow-clip">
         <div className="flex flex-col gap-4">
           <span className="font-bold text-center text-md md:text-lg xl:text-xl 2xl:text-2xl">
             Languages

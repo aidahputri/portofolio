@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { Navbar, PageLayout } from '@/components'
+import { Footer, Navbar, PageLayout } from '@/components'
 import { ChipButtonContextProvider } from '@/context'
+import { Toaster } from 'react-hot-toast'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,7 +29,9 @@ export default function RootLayout({
         <ChipButtonContextProvider>
           <Navbar />
           <PageLayout children={children} />
+          <Footer/>
         </ChipButtonContextProvider>
+        <Toaster/>
       </body>
     </html>
   )
