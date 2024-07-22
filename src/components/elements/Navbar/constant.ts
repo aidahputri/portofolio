@@ -14,9 +14,4 @@ export const NAV_ITEMS: NavbarProps[] = [
     url: '/projects',
     Icon: FaCode,
   },
-  {
-    label: 'Contacts',
-    url: '/#contacts',
-    Icon: BiPhone,
-  },
 ]
