@@ -15,7 +15,7 @@ export const PROJECTS: ProjectCardProps[] = [
     techStacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
     ],
@@ -45,10 +45,11 @@ export const PROJECTS: ProjectCardProps[] = [
       'Optima MedTech Antibiotic Predictor is a tool designed to predict the most effective antibiotics for treating infections, based on patient-specific data and microbial analysis.',
     techStacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
     ],
-    application: 'https://play.google.com/store/apps/details?id=com.medtech.optima&hl=en',
+    application:
+      'https://play.google.com/store/apps/details?id=com.medtech.optima&hl=en',
   },
   {
     title: 'Pegon',
@@ -60,7 +61,7 @@ export const PROJECTS: ProjectCardProps[] = [
     techStacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg',
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
     ],
