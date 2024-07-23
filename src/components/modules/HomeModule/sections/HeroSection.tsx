@@ -40,7 +40,7 @@ export const HeroSection: React.FC = () => {
 
         <Link
           href={'/projects'}
-          className="flex items-center px-6 py-3 md:px-8 md:py-3 mt-10 bg-[#3A0CA3] hover:bg-[#3A0CA3]/70 rounded-lg w-full md:w-fit 
+          className="flex items-center justify-center px-6 py-3 md:px-8 md:py-3 mt-10 bg-[#3A0CA3] hover:bg-[#3A0CA3]/70 rounded-lg w-full md:w-fit 
           gap-4 transition-transform duration-300 transform hover:scale-95"
         >
           <span className="font-bold text-sm md:text-md">Go to Projects</span>
@@ -58,8 +58,8 @@ export const HeroSection: React.FC = () => {
             src={HeroImage}
             alt={'aidah-novallia-hero'}
             layout="responsive"
-            width={1200}
-            height={800}
+            width={600}
+            height={600}
             quality={100}
             priority
           />

@@ -26,8 +26,8 @@ export const TechStackSection: React.FC = () => {
         </Link>
       </div>
 
-      <div className="flex flex-col gap-4 overflow-clip">
-        <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 overflow-clip">
           <span className="font-bold text-center text-md md:text-lg xl:text-xl 2xl:text-2xl">
             Languages
           </span>
@@ -48,9 +48,6 @@ export const TechStackSection: React.FC = () => {
           <InfiniteLogos arr={TOOLS} />
         </div>
       </div>
-
-      {/* <AnimatedBlob className="top-40 w-64 h-64 blur-3xl bg-gradient-to-r from-purple-500 to-pink-700" />
-      <AnimatedBlob className="top-96 left-auto -right-8 inset-0 bottom-0 w-96 h-96 blur-3xl bg-gradient-to-r from-purple-500 to-purple-800" /> */}
     </section>
   )
 }

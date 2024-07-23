@@ -29,7 +29,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
 
       <div className="flex flex-col flex-1 gap-6 lg:gap-8 p-4 md:p-8 lg:p-6 xl:p-8">
-        <div className="flex items-center gap-2">
+        <div className="flex flex-col md:flex-row md:items-center gap-2">
           <div className="w-fit flex items-center justify-center px-4 py-2 rounded-full bg-[#F72585] text-xs">
             {getTitleByValue(type)}
           </div>

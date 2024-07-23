@@ -11,7 +11,7 @@ export const InfiniteLogos: React.FC<InfiniteLogosProps> = ({
   reverse = false,
 }) => {
   return (
-    <div className="relative overflow-hidden py-5 max-w-[1024px]">
+    <div className="relative overflow-hidden py-5 max-w-[192px] lg:max-w-[1024px]">
       <div
         className={`marquee flex items-center whitespace-nowrap ${reverse ? 'marquee-reverse' : ''}`}
       >
