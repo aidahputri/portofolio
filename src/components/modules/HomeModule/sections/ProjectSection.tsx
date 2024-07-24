@@ -34,7 +34,7 @@ export const ProjectSection: React.FC = () => {
 
         <Link
           href={'/projects'}
-          className="flex items-center place-self-end px-6 py-3 md:px-8 md:py-3 bg-[#F72585] hover:bg-[#F72585]/70 rounded-xl w-full md:w-fit 
+          className="flex items-center justify-center place-self-end px-6 py-3 md:px-8 md:py-3 bg-[#F72585] hover:bg-[#F72585]/70 rounded-xl w-full md:w-fit 
           gap-4 transition-transform duration-300 transform hover:scale-95"
         >
           <span className="font-bold text-md md:text-lg">See All</span>

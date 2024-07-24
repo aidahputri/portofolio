@@ -11,7 +11,7 @@ export const InfiniteLogos: React.FC<InfiniteLogosProps> = ({
   reverse = false,
 }) => {
   return (
-    <div className="relative overflow-hidden py-5 max-w-[192px] lg:max-w-[1024px]">
+    <div className="relative overflow-hidden py-5 max-w-[200px] md:max-w-[600px] xl:max-w-[1024px]">
       <div
         className={`marquee flex items-center whitespace-nowrap ${reverse ? 'marquee-reverse' : ''}`}
       >
@@ -20,9 +20,9 @@ export const InfiniteLogos: React.FC<InfiniteLogosProps> = ({
             key={index}
             src={logo}
             alt={`logo-${index}`}
-            width={80}
-            height={80}
-            className="mx-5"
+            width={20}
+            height={20}
+            className="mx-2 md:mx-5 md:h-20 md:w-20"
             title="aidah kuci kuci"
           />
         ))}

@@ -18,7 +18,7 @@ export const TechStackSection: React.FC = () => {
 
         <Link
           href={''}
-          className="flex items-center place-self-center px-6 py-3 md:px-8 md:py-3 bg-[#B5179E] hover:bg-[#B5179E]/70 rounded-xl w-full md:w-fit 
+          className="flex items-center justify-center place-self-center px-6 py-3 md:px-8 md:py-3 bg-[#B5179E] hover:bg-[#B5179E]/70 rounded-xl w-full md:w-fit 
           gap-4 transition-transform duration-300 transform hover:scale-95"
         >
           <span className="font-bold text-md md:text-lg">See My Projects</span>
