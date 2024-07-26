@@ -16,7 +16,7 @@ export const NavItem: React.FC<NavItemProps> = ({
 
   useEffect(() => {
     setIsClient(true)
-  }, [])
+  }, [isClient])
 
   return (
     <Link

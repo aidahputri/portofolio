@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { Footer, Navbar, PageLayout } from '@/components'
 import { ChipButtonContextProvider } from '@/context'
 import { Toaster } from 'react-hot-toast'
 import { LoadingContextProvider } from '@/context/LoadingContext'

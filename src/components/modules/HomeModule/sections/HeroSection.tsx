@@ -17,7 +17,7 @@ export const HeroSection: React.FC = () => {
         </span>
         <div className="flex gap-2 items-center justify-center md:justify-normal font-bold">
           <span className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
-            I'm
+            I&apos;m
           </span>
           <span className="text-lg md:text-xl xl:text-3xl 2xl:text-4xl bg-gradient-to-r from-[#7209B7] to-[#F72585] bg-clip-text text-transparent">
             <Typewriter

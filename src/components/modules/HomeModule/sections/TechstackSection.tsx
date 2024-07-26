@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { FRAMEWORKS, LANGUAGES, TOOLS } from '../constants'
-import { AnimatedBlob, InfiniteLogos } from '../module-elements'
+import { InfiniteLogos } from '../module-elements'
 import { FaArrowRightLong } from 'react-icons/fa6'
 
 export const TechStackSection: React.FC = () => {

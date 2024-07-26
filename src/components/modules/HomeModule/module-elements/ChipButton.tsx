@@ -1,6 +1,6 @@
 'use client'
 
-import React, { ComponentPropsWithoutRef, useState } from 'react'
+import React, { ComponentPropsWithoutRef } from 'react'
 
 interface ChipButtonProps {
   title: string
