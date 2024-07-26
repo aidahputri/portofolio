@@ -10,27 +10,27 @@ export const HIGHLIGHT_ITEMS = [
     image: <Image src={Code} alt={'Code'} />,
     title: 'Web Development',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et congue odio. Integer tincidunt risus a elit vestibulum, ac eleifend enim bibendum. ',
+      'Specializing in creating responsive and user-friendly websites using modern technologies and best practices.',
   },
   {
     id: 2,
     image: <Image src={Layers} alt={'Layers'} />,
     title: 'System Analysis & Design',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et congue odio. Integer tincidunt risus a elit vestibulum, ac eleifend enim bibendum. ',
+      'Expert in analyzing complex systems and designing efficient, scalable solutions tailored to business needs.',
   },
   {
     id: 3,
     image: <Image src={Figma} alt={'Figma'} />,
     title: 'UI/UX Design',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et congue odio. Integer tincidunt risus a elit vestibulum, ac eleifend enim bibendum. ',
+      'Focused on crafting intuitive and aesthetically pleasing user interfaces to enhance user experience.',
   },
   {
     id: 4,
     image: <Image src={Activity} alt={'Activity'} />,
     title: 'Data Analysis',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et congue odio. Integer tincidunt risus a elit vestibulum, ac eleifend enim bibendum. ',
+      'Proficient in interpreting data, identifying trends, and providing actionable insights to drive business decisions.',
   },
 ]

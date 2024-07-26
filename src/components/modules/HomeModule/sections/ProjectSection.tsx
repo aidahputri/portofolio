@@ -25,9 +25,8 @@ export const ProjectSection: React.FC = () => {
         </h2>
 
         <span className="text-md md:text-lg xl:text-xl text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et
-          congue odio. Integer tincidunt risus a elit vestibulum, ac eleifend
-          enim bibendum.
+          Here are some of the recent projects I have worked on, showcasing my
+          skills and expertise in various domains.
         </span>
 
         <ChipButtonGroup />
