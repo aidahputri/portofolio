@@ -1,5 +1,5 @@
 import { ProjectCardProps } from './interface'
-import ECI from '../../../../public/images/Eci.png'
+import ECI from '../../../../public/images/eci.png'
 import TamanSchool from '../../../../public/images/taman-school.png'
 import Pegon from '../../../../public/images/pegon.png'
 import Optima from '../../../../public/images/optima.png'
