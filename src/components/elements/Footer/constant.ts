@@ -29,6 +29,6 @@ export const CONTACTS: ContactInterface[] = [
   {
     type: 'MEDIUM',
     Icon: FaMedium,
-    url: 'https://medium.com/@aidahptr15'
-  }
+    url: 'https://medium.com/@aidahptr15',
+  },
 ]

@@ -16,7 +16,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   website,
   git,
   documentation,
-  application
+  application,
 }) => {
   return (
     <motion.div

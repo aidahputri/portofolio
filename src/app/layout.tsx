@@ -30,7 +30,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <LoadingContextProvider>
           <ChipButtonContextProvider>
-          <AppLayout>{children}</AppLayout>
+            <AppLayout>{children}</AppLayout>
           </ChipButtonContextProvider>
           <Toaster />
         </LoadingContextProvider>
