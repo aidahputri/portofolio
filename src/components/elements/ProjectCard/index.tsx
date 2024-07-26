@@ -29,23 +29,23 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
 
       <div className="flex flex-col flex-1 gap-6 lg:gap-8 p-4 md:p-8 lg:p-6 xl:p-8">
-        <div className="flex flex-col md:flex-row md:items-center gap-2">
-          <div className="w-fit flex items-center justify-center px-4 py-2 rounded-full bg-[#F72585] text-xs">
+        <div className="flex md:items-center gap-2">
+          <div className="w-fit flex items-center justify-center px-4 py-2 rounded-full bg-[#F72585] text-[6px] xs:text-[10px] md:text-[8px] lg:text-[10px]">
             {getTitleByValue(type)}
           </div>
 
           {paid && (
-            <div className="w-fit flex items-center justify-center px-4 py-2 rounded-full border border-[#F72585] bg-transparent text-xs">
+            <div className="w-fit flex items-center justify-center px-4 py-2 rounded-full border border-[#F72585] bg-transparent text-[6px] xs:text-[10px] md:text-[8px] lg:text-[10px]">
               Paid Project
             </div>
           )}
         </div>
 
         <div className="flex flex-col gap-3 flex-grow">
-          <h3 className="text-white font-semibold text-lg xl:text-xl">
+          <h3 className="text-white font-semibold md:text-lg xl:text-xl">
             {title}
           </h3>
-          <p className="text-white text-xs md:text-xs text-justify">
+          <p className="text-white text-[10px] md:text-sm text-justify">
             {description}
           </p>
         </div>
@@ -55,7 +55,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             <Link
               href={website}
               target="_blank"
-              className="text-sm w-fit rounded-lg px-8 py-2 bg-[#B5179E] font-bold"
+              className="text-sm md:text-sm w-fit rounded-lg px-8 py-2 bg-[#B5179E] font-bold"
             >
               Website
             </Link>
@@ -64,7 +64,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             <Link
               href={application}
               target="_blank"
-              className="text-sm w-fit rounded-lg px-8 py-2 bg-[#B5179E] font-bold"
+              className="text-sm md:text-sm w-fit rounded-lg px-8 py-2 bg-[#B5179E] font-bold"
             >
               Application
             </Link>
@@ -73,7 +73,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             <Link
               href={git}
               target="_blank"
-              className={`text-sm w-fit rounded-lg px-8 py-2 font-bold ${
+              className={`text-sm md:text-sm w-fit rounded-lg px-8 py-2 font-bold ${
                 website
                   ? 'text-white border-2 border-[#B5179E]'
                   : 'bg-gradient-to-b from-[#B5179E] to-[#F72585]'
@@ -86,7 +86,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             <Link
               href={documentation}
               target="_blank"
-              className="text-sm w-fit rounded-lg px-1 py-2 font-bold text-[#B5179E] hover:text-[#B5179E]/70"
+              className="text-sm md:text-sm w-fit rounded-lg px-1 py-2 font-bold text-[#B5179E] hover:text-[#B5179E]/70"
             >
               Documentation
               <hr className="border-[1px] border-[#B5179E]" />

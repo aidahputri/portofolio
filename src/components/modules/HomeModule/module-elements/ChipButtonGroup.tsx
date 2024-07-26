@@ -8,7 +8,7 @@ export const ChipButtonGroup: React.FC = () => {
   const { clickedButton, setClickedButton } = useChipButtonContext()
 
   return (
-    <div className="flex flex-wrap gap-2 place-self-center">
+    <div className="flex flex-wrap gap-2 justify-center items-center place-self-center">
       {FILTERS.map((filter, index) => {
         return (
           <ChipButton
