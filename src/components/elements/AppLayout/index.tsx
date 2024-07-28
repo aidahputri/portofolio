@@ -3,6 +3,8 @@
 import React, { useEffect } from 'react'
 import { Navbar, PageLayout, Footer, Loading } from '@/components'
 import { useLoadingContext } from '@/context/LoadingContext'
+import { DefaultSeo } from 'next-seo'
+import SEO from '../../../../next-seo.config'
 
 const AppContent: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { isLoading, setIsLoading } = useLoadingContext()
@@ -21,6 +23,7 @@ const AppContent: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
   return (
     <>
+      <DefaultSeo {...SEO} />
       <Navbar />
       <PageLayout>{children}</PageLayout>
       <Footer />
