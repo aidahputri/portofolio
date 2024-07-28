@@ -4,7 +4,7 @@ const SEO = {
     canonical: 'https://aidahnovallia.vercel.app/',
     openGraph: {
         type: 'website',
-        locale: 'en_US',
+        locale: 'id_ID',
         url: 'https://aidahnovallia.vercel.app/',
         site_name: 'Aidah Novallia Putri',
         images: [
