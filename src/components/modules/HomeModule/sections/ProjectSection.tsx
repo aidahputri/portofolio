@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { FaArrowRightLong } from 'react-icons/fa6'
 import { ChipButtonGroup } from '../module-elements'
 import { PROJECTS } from '@/components/elements/ProjectCard/constant'
-import { ProjectCard } from '@/components/elements'
+import { NoData, ProjectCard } from '@/components/elements'
 import { useChipButtonContext } from '@/context'
 
 export const ProjectSection: React.FC = () => {
@@ -41,21 +41,27 @@ export const ProjectSection: React.FC = () => {
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-        {displayedProjects.map((item, index) => (
-          <ProjectCard
-            key={index}
-            title={item.title}
-            imageUrl={item.imageUrl}
-            type={item.type}
-            paid={item.paid}
-            description={item.description}
-            techStacks={item.techStacks}
-            website={item.website}
-            application={item.application}
-          />
-        ))}
-      </div>
+      {displayedProjects.length > 0 ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+          {displayedProjects.map((item, index) => (
+            <ProjectCard
+              key={index}
+              title={item.title}
+              imageUrl={item.imageUrl}
+              type={item.type}
+              paid={item.paid}
+              description={item.description}
+              techStacks={item.techStacks}
+              website={item.website}
+              application={item.application}
+            />
+          ))}
+        </div>
+      ) : (
+        <div className="w-full flex justify-center items-center">
+          <NoData />
+        </div>
+      )}
     </section>
   )
 }
