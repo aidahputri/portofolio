@@ -83,13 +83,15 @@ export const PROJECTS: ProjectCardProps[] = [
     techStacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg',
     ],
-    application: 'https://github.com/cataract-bangkit/android/releases/tag/v1.0.0',
+    application:
+      'https://github.com/cataract-bangkit/android/releases/tag/v1.0.0',
     git: 'https://github.com/cataract-bangkit',
-    documentation: 'https://docs.google.com/document/d/1yrL9-mBf3EqGXgZeX3dhx4Y0Rl900p0EyhYcyDd4-0M/edit?pli=1',
+    documentation:
+      'https://docs.google.com/document/d/1yrL9-mBf3EqGXgZeX3dhx4Y0Rl900p0EyhYcyDd4-0M/edit?pli=1',
   },
   {
     title: 'Pegon',
@@ -120,7 +122,7 @@ export const PROJECTS: ProjectCardProps[] = [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg',
     ],
     website: 'https://worldie-atw.vercel.app/',
     git: 'https://github.com/orgs/WorldieATW/repositories',
@@ -134,11 +136,11 @@ export const PROJECTS: ProjectCardProps[] = [
       'Kivotos Bank is an internet banking application designed to meet fast and convenient financial needs in alignment with the digitalization agenda and Industry 4.0 Revolution. Some of the features are Transfer, E-wallet, and Bill Payment. This project is part of Advanced Programming Group Projects.',
     techStacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg',
     ],
     website: 'https://kivotosbank-dev.vercel.app/',
   },
@@ -160,23 +162,23 @@ export const PROJECTS: ProjectCardProps[] = [
     imageUrl: PortofolioDesign,
     type: 'DESIGN',
     paid: false,
-    description:
-      'This is UI/UX design for my portofolio website',
+    description: 'This is UI/UX design for my portofolio website',
     techStacks: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg',
     ],
-    documentation: 'https://www.figma.com/design/ardQRx4dPdUGeRxMFQ1hDQ/Portofolio?node-id=0-1&t=2J5agZ1MJObjXn0W-1',
+    documentation:
+      'https://www.figma.com/design/ardQRx4dPdUGeRxMFQ1hDQ/Portofolio?node-id=0-1&t=2J5agZ1MJObjXn0W-1',
   },
   {
     title: 'CatarAct Interface Design',
     imageUrl: CataractDesign,
     type: 'DESIGN',
     paid: false,
-    description:
-      'This is UI/UX design for CatarAct application.',
+    description: 'This is UI/UX design for CatarAct application.',
     techStacks: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg',
     ],
-    documentation: 'https://www.figma.com/design/o2bAKIKx2y5Lt7qnAhyAZ6/High-Fidelity?node-id=0-1&t=LXgRh50bcZFv2mHD-1',
+    documentation:
+      'https://www.figma.com/design/o2bAKIKx2y5Lt7qnAhyAZ6/High-Fidelity?node-id=0-1&t=LXgRh50bcZFv2mHD-1',
   },
 ]
