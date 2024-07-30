@@ -86,10 +86,10 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             <Link
               href={documentation}
               target="_blank"
-              className="text-sm md:text-sm w-fit rounded-lg px-1 py-2 font-bold text-[#B5179E] hover:text-[#B5179E]/70"
+              className="text-sm md:text-sm w-fit rounded-lg px-1 py-2 font-bold text-[#F72585] hover:text-[#F72585]/70"
             >
               Documentation
-              <hr className="border-[1px] border-[#B5179E]" />
+              <hr className="border-[1px] border-[#F72585]" />
             </Link>
           )}
         </div>

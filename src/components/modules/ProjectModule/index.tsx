@@ -41,6 +41,8 @@ export const ProjectModule: React.FC = () => {
               techStacks={item.techStacks}
               website={item.website}
               application={item.application}
+              git={item.git}
+              documentation={item.documentation}
             />
           ))}
         </div>
