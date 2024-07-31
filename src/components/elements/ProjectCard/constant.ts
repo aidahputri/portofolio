@@ -10,6 +10,10 @@ import Pemira from '../../../../public/images/pemira.png'
 import Cataract from '../../../../public/images/cataract.png'
 import PortofolioDesign from '../../../../public/images/porto-design.png'
 import CataractDesign from '../../../../public/images/cataract-design.png'
+import WorldieDesign from '../../../../public/images/worldie-design.png'
+import VinylDesign from '../../../../public/images/vinyl-design.png'
+import HonestPantryDesign from '../../../../public/images/honest-pantry-design.png'
+import HealthMateDesign from '../../../../public/images/healthmate-design.png'
 
 export const PROJECTS: ProjectCardProps[] = [
   {
@@ -180,5 +184,53 @@ export const PROJECTS: ProjectCardProps[] = [
     ],
     documentation:
       'https://www.figma.com/design/o2bAKIKx2y5Lt7qnAhyAZ6/High-Fidelity?node-id=0-1&t=LXgRh50bcZFv2mHD-1',
+  },
+  {
+    title: 'Worldie Interface Design',
+    imageUrl: WorldieDesign,
+    type: 'DESIGN',
+    paid: false,
+    description: 'This is UI/UX design for Worldie Website.',
+    techStacks: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg',
+    ],
+    documentation:
+      'https://www.figma.com/design/0qEHVIZYnNvoNfiife6s1J/ATW?node-id=0-1&t=M78U1rR88yNCUzDk-1',
+  },
+  {
+    title: 'Vinyl Interface Design',
+    imageUrl: VinylDesign,
+    type: 'DESIGN',
+    paid: false,
+    description: 'This is UI/UX design for Vinyl Website.',
+    techStacks: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg',
+    ],
+    documentation:
+      'https://www.figma.com/design/8LcPGtpdrQUXr4K1hbY7aa/High-Fidelity?node-id=0-1&t=lFrfxDSFjbuWwkNf-1',
+  },
+  {
+    title: 'Honest Pantry Interface Design',
+    imageUrl: HonestPantryDesign,
+    type: 'DESIGN',
+    paid: false,
+    description: 'This is UI/UX design for Honest Pantry Website.',
+    techStacks: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg',
+    ],
+    documentation:
+      'https://www.figma.com/design/Cg2jo9OKPjyGAtMnIXxY7j/web-design?node-id=5-2&t=aZ5W64bwPm4AdueJ-1',
+  },
+  {
+    title: 'HealthMate Interface Design',
+    imageUrl: HealthMateDesign,
+    type: 'DESIGN',
+    paid: false,
+    description: 'This is UI/UX design for HealthMate Application.',
+    techStacks: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg',
+    ],
+    documentation:
+      'https://www.figma.com/design/xtlolUr8D1D1G8aqmkgwr3/HealthMate?node-id=0-1&t=FL5sOgLXjuVeJR8L-1',
   },
 ]
