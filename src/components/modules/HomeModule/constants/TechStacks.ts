@@ -82,4 +82,5 @@ export const TOOLS = [
   'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg',
   'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prometheus/prometheus-original.svg',
   'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original.svg',
+  'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/godot/godot-original.svg'
 ]

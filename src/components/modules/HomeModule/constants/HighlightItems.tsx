@@ -2,6 +2,7 @@ import Code from '../../../../../public/Code.svg'
 import Figma from '../../../../../public/Figma.svg'
 import Layers from '../../../../../public/Layers.svg'
 import Activity from '../../../../../public/Activity.svg'
+import Game from '../../../../../public/Gamedev.svg'
 import Image from 'next/image'
 
 export const HIGHLIGHT_ITEMS = [
@@ -32,5 +33,12 @@ export const HIGHLIGHT_ITEMS = [
     title: 'Data Analysis',
     description:
       'Proficient in interpreting data, identifying trends, and providing actionable insights to drive business decisions.',
+  },
+  {
+    id: 5,
+    image: <Image src={Game} alt={'Game'} />,
+    title: 'Game Development',
+    description:
+      'Skilled in designing engaging gameplay experiences, creating immersive worlds, and developing interactive mechanics.',
   },
 ]
