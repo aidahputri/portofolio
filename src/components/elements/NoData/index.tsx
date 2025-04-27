@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import * as NoDataImage from '../../../../public/no-data.svg'
+import * as NoDataImage from '../../../../public/robot.svg'
 
 export const NoData: React.FC = () => {
   return (
@@ -18,7 +18,7 @@ export const NoData: React.FC = () => {
           priority
         />
       </div>
-      <span className="font-bold text-sm md:text-md xl:text-lg bg-gradient-to-r from-[#7209B7] to-[#F72585] bg-clip-text text-transparent">
+      <span className="font-bold text-sm md:text-md xl:text-lg text-[#F72585]">
         There&apos;s No Data
       </span>
     </div>

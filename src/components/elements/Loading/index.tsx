@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import LoadingImage from '../../../../public/loading.svg'
+import LoadingImage from '../../../../public/robot.svg'
 import { Typewriter } from 'react-simple-typewriter'
 
 export const Loading: React.FC = () => {
@@ -26,7 +26,7 @@ export const Loading: React.FC = () => {
           />
         </motion.div>
       </div>
-      <span className="font-bold text-lg md:text-xl xl:text-3xl 2xl:text-4xl bg-gradient-to-r from-[#7209B7] to-[#F72585] bg-clip-text text-transparent">
+      <span className="font-bold text-lg md:text-xl xl:text-3xl 2xl:text-4xl bg-gradient-to-r from-[#7209B7] to-[#F72585] bg-clip-text text-transparent text-center">
         <Typewriter
           words={['Loading...']}
           loop={0}
