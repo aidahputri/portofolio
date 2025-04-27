@@ -16,7 +16,7 @@ export const FILTERS = [
     value: 'DATA',
   },
   {
-    title: 'System Analysis',
-    value: 'SA',
+    title: 'Game Development',
+    value: 'GAME',
   },
 ]

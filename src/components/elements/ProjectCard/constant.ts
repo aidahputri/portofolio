@@ -3,6 +3,7 @@ import ECI from '../../../../public/images/eci.png'
 import TamanSchool from '../../../../public/images/taman-school.png'
 import Pegon from '../../../../public/images/pegon.png'
 import Optima from '../../../../public/images/optima.png'
+import RnD from '../../../../public/images/rnd-screnshoot.png'
 import Portofolio from '../../../../public/images/portofolio.png'
 import Worldie from '../../../../public/images/worldie.png'
 import Kivotos from '../../../../public/images/kivotos.png'
@@ -14,8 +15,30 @@ import WorldieDesign from '../../../../public/images/worldie-design.png'
 import VinylDesign from '../../../../public/images/vinyl-design.png'
 import HonestPantryDesign from '../../../../public/images/honest-pantry-design.png'
 import HealthMateDesign from '../../../../public/images/healthmate-design.png'
+import WhisperingWoods from '../../../../public/images/WW-1.png'
+import Dreamscape from '../../../../public/images/dreamscape.png'
+import Pengcit from '../../../../public/images/pengcit-ss.jpg'
+import Kasdad from '../../../../public/images/datagazer-ss.jpg'
 
 export const PROJECTS: ProjectCardProps[] = [
+  {
+    title: 'RnD (Rent N Drive)',
+    imageUrl: RnD,
+    type: 'WEBDEV',
+    paid: false,
+    description:
+      'A web-based platform for managing car rentals and allowing users to easily search, book, and rent cars.',
+    techStacks: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+
+    ],
+    website:
+      'https://kelompok-42-rnd-frontend.pkpl.cs.ui.ac.id/',
+  },
   {
     title: 'Optima MedTech Antibiotic Predictor',
     imageUrl: Optima,
@@ -232,5 +255,45 @@ export const PROJECTS: ProjectCardProps[] = [
     ],
     documentation:
       'https://www.figma.com/design/xtlolUr8D1D1G8aqmkgwr3/HealthMate?node-id=0-1&t=FL5sOgLXjuVeJR8L-1',
+  },
+  {
+    title: 'Whispering Woods',
+    imageUrl: WhisperingWoods,
+    type: 'GAME',
+    paid: false,
+    description: 'An atmospheric adventure game set in a decaying world. Players control Aeria, a boy guided by the Spirit of Wind, on a journey to restore balance.',
+    techStacks: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/godot/godot-original.svg',
+
+    ],
+    documentation:
+      'https://github.com/aidahputri/whispering-winds',
+    application: 'https://amaltheanixie.itch.io/whispering-woods',
+  },
+  {
+    title: 'Dreamscape',
+    imageUrl: Dreamscape,
+    type: 'GAME',
+    paid: false,
+    description: 'A Rhythm game where you need to keep the balance between dark and light notes.',
+    techStacks: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg',
+
+    ],
+    application: 'https://meervix.itch.io/dreamscape',
+  },
+  {
+    title: 'Meramal Cuaca Data Analysis',
+    imageUrl: Kasdad,
+    type: 'DATA',
+    paid: false,
+    description: 'Meramal Cuaca is a data analysis project aimed at predicting weather patterns using machine learning techniques. The project involves collecting and preprocessing weather data, exploring various models to achieve accurate predictions, and visualizing the results to provide actionable insights.',
+    techStacks: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-plain.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg',
+
+    ],
+    documentation: 'https://drive.google.com/file/d/1XO8os4J0n0qP2uHJlO-TmDjcWhbaDg-R/view',
   },
 ]
