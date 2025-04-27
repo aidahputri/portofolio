@@ -17,7 +17,6 @@ import HonestPantryDesign from '../../../../public/images/honest-pantry-design.p
 import HealthMateDesign from '../../../../public/images/healthmate-design.png'
 import WhisperingWoods from '../../../../public/images/WW-1.png'
 import Dreamscape from '../../../../public/images/dreamscape.png'
-import Pengcit from '../../../../public/images/pengcit-ss.jpg'
 import Kasdad from '../../../../public/images/datagazer-ss.jpg'
 
 export const PROJECTS: ProjectCardProps[] = [
@@ -34,10 +33,8 @@ export const PROJECTS: ProjectCardProps[] = [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
-
     ],
-    website:
-      'https://kelompok-42-rnd-frontend.pkpl.cs.ui.ac.id/',
+    website: 'https://kelompok-42-rnd-frontend.pkpl.cs.ui.ac.id/',
   },
   {
     title: 'Optima MedTech Antibiotic Predictor',
@@ -261,13 +258,12 @@ export const PROJECTS: ProjectCardProps[] = [
     imageUrl: WhisperingWoods,
     type: 'GAME',
     paid: false,
-    description: 'An atmospheric adventure game set in a decaying world. Players control Aeria, a boy guided by the Spirit of Wind, on a journey to restore balance.',
+    description:
+      'An atmospheric adventure game set in a decaying world. Players control Aeria, a boy guided by the Spirit of Wind, on a journey to restore balance.',
     techStacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/godot/godot-original.svg',
-
     ],
-    documentation:
-      'https://github.com/aidahputri/whispering-winds',
+    documentation: 'https://github.com/aidahputri/whispering-winds',
     application: 'https://amaltheanixie.itch.io/whispering-woods',
   },
   {
@@ -275,10 +271,10 @@ export const PROJECTS: ProjectCardProps[] = [
     imageUrl: Dreamscape,
     type: 'GAME',
     paid: false,
-    description: 'A Rhythm game where you need to keep the balance between dark and light notes.',
+    description:
+      'A Rhythm game where you need to keep the balance between dark and light notes.',
     techStacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg',
-
     ],
     application: 'https://meervix.itch.io/dreamscape',
   },
@@ -287,13 +283,14 @@ export const PROJECTS: ProjectCardProps[] = [
     imageUrl: Kasdad,
     type: 'DATA',
     paid: false,
-    description: 'Meramal Cuaca is a data analysis project aimed at predicting weather patterns using machine learning techniques. The project involves collecting and preprocessing weather data, exploring various models to achieve accurate predictions, and visualizing the results to provide actionable insights.',
+    description:
+      'Meramal Cuaca is a data analysis project aimed at predicting weather patterns using machine learning techniques. The project involves collecting and preprocessing weather data, exploring various models to achieve accurate predictions, and visualizing the results to provide actionable insights.',
     techStacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-plain.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg',
-
     ],
-    documentation: 'https://drive.google.com/file/d/1XO8os4J0n0qP2uHJlO-TmDjcWhbaDg-R/view',
+    documentation:
+      'https://drive.google.com/file/d/1XO8os4J0n0qP2uHJlO-TmDjcWhbaDg-R/view',
   },
 ]
